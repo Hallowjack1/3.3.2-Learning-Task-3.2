@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+
+    <ScrollView
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Peripherals"
+                android:textAlignment="center"
+                android:textColor="#3CE358"
+                android:textSize="60sp"
+                android:clickable="true"/>
+
+            <ImageView
+                android:id="@+id/controller"
+                android:layout_width="match_parent"
+                android:layout_height="170sp"
+                android:layout_marginTop="10sp"
+                android:layout_marginBottom="10sp"
+                app:srcCompat="@drawable/controller"
+                android:contentDescription="Controller"
+                android:clickable="true"/>
+
+            <ImageView
+                android:id="@+id/keyboard"
+                android:layout_width="match_parent"
+                android:layout_height="170sp"
+                android:layout_marginTop="10sp"
+                android:layout_marginBottom="10sp"
+                app:srcCompat="@drawable/duckyone3"
+                android:contentDescription="Keyboard"
+                android:clickable="true"/>
+
+            <ImageView
+                android:id="@+id/mouse"
+                android:layout_width="match_parent"
+                android:layout_height="170sp"
+                android:layout_marginTop="10sp"
+                android:layout_marginBottom="10sp"
+                app:srcCompat="@drawable/logitechg502"
+                android:contentDescription="Mouse"
+                android:clickable="true"/>
+
+            <ImageView
+                android:id="@+id/microphone"
+                android:layout_width="match_parent"
+                android:layout_height="170sp"
+                android:layout_marginTop="10sp"
+                android:layout_marginBottom="10sp"
+                app:srcCompat="@drawable/microphone"
+                android:contentDescription="Microphone"
+                android:clickable="true"/>
+
+            <ImageView
+                android:id="@+id/monitor"
+                android:layout_width="match_parent"
+                android:layout_height="170sp"
+                android:layout_marginTop="10sp"
+                android:layout_marginBottom="10sp"
+                app:srcCompat="@drawable/monitor"
+                android:contentDescription="Monitor"
+                android:clickable="true"/>
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
